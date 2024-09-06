@@ -31,7 +31,10 @@ app.use(async (ctx, next) => {
 _.get("/test-check", async (ctx, next) => {
   ctx.body = "Test";
 });
-_.get(/^(\/(?:recipe|home|about)?)$/, async (ctx) => {
+//starts with - match everyting enclosed with - every subroute of the group
+//provide here data für rendering in the pages
+//futher urlpath for main.pug switch case
+_.get(/^(\/(?:recipe|home|about)?)\/*/, async (ctx) => {
   const contentArgs = {
     recipe: {
       title: "Spaghetti Bolognese",
