@@ -36,6 +36,7 @@ _.get("/test-check", async (ctx, next) => {
 //futher urlpath for main.pug switch case
 _.get(/^(\/(?:recipe|home|about)?)\/*/, async (ctx) => {
   const contentArgs = {
+    urlPath: ctx.path,
     recipe: {
       title: "Spaghetti Bolognese",
       ingredients: [
@@ -48,8 +49,9 @@ _.get(/^(\/(?:recipe|home|about)?)\/*/, async (ctx) => {
       ],
       instructions:
         "Kochen Sie die Spaghetti gemäß den Anweisungen auf der Packung. Braten Sie das Hackfleisch in einer Pfanne an, fügen Sie die gehackte Zwiebel und Knoblauch hinzu und kochen Sie weiter, bis sie weich sind. Geben Sie die Tomaten hinzu und lassen Sie die Sauce köcheln. Würzen Sie die Sauce nach Geschmack und servieren Sie sie mit den Spaghetti.",
+      imgHeader: true,
+      imgUrl: "/img/recipe.jpeg",
     },
-    urlPath: ctx.path,
   };
   await ctx.render("main", contentArgs);
 });

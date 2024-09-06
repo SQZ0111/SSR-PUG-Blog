@@ -1,0 +1,9 @@
+main.content
+  include ../parts/heading.pug
+  div.recipe-content
+    h2 Zutaten
+    ul
+      each ingredient in recipe.ingredients
+        li= ingredient
+    h2 Zubereitung
+    p= instructions
