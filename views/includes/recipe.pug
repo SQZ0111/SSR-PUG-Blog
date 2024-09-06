@@ -1,0 +1,12 @@
+
+
+-var layout = ["d-flex","flex-column","align-items-center","h-100","w-100"];
+  div(class=layout)
+    h1(class="text-center") Some Dish
+    img(src='/img/recipe.jpeg', alt='Rezeptbild', class='img-fluid')
+    h2 Zutaten
+    ul
+      each ingredient in recipe.ingredients
+        li= ingredient
+    h2 Zubereitung
+    p= instructions

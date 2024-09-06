@@ -1,0 +1,444 @@
+/* global variables */
+:root {
+   --font-color: #416a59;
+   --pagesbox-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   --pages-hover-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+   --hover-pointer: pointer;
+   --font-hover-color: #acc16d;
+
+}
+
+/* app-body on every page */
+body {
+    color: var(--font-color);
+    background-color: #f5eec2;
+    font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+    padding: 0;
+}
+
+
+h1 {
+	font-family:'Rock Salt', sans-serif;
+	text-align: center;
+}
+
+h2 {
+	font-family:'Rock Salt', sans-serif;
+}
+
+.app-body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* navbar on every page */
+.navbar-box {
+    height: 10vh;
+    width: 100vw;
+}
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+	font-weight: bold;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: var(--pagesbox-shadow);
+	text-transform: uppercase;
+}
+
+/* Links styling */
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    cursor: var(--hover-pointer);
+    transform: scale(1.05);
+    box-shadow: var(--pagesbox-shadow);
+    background-color: #a9c25d;
+	padding:10px;
+}
+
+a.active {
+    cursor: var(--hover-pointer);
+    transform: scale(1.05);
+    box-shadow: var(--pagesbox-shadow);
+    background-color: #a9c25d;
+	padding:10px;
+}
+
+
+/* navbar for all pages */
+.navbar a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+  
+.navbar a:hover {
+    transform: scale(1.05);
+    box-shadow: var(--pagesbox-shadow);
+    background-color: #a9c25d;
+}
+
+/* Header on every page */
+.header {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+/* startpage content */
+.content {
+    height: 30%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+    text-align: left;
+    padding: 20px;
+}
+
+/* start-page img */
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+  
+.image img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.logoimage {
+	width:20%;
+	padding-right:5%;
+	margin-top: 2.5%;
+}
+
+/* about page content section */
+.about-content {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    height: 70%;
+    gap: 5%;
+}
+  
+.about-text {
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+    text-align: left;
+}
+  
+.profile-image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.profile-image img {
+    max-width: 100%;
+    height: auto;
+	margin-top: 1em;
+}
+  
+.skills-list {
+    width: 30%;
+}
+
+ul {
+	flex-wrap: wrap;
+}
+
+/* Destinations content */
+.destination-content {
+	width:60%;
+	display: flex;
+	flex-direction: column;
+  }
+  
+.destination {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+	
+}
+
+hr {
+    margin-left: 0;
+    margin-right: 0;
+	border: 1px solid #416a59;
+}
+  
+.destination h2 {
+    margin-top: 10px;
+  }
+  
+.destination img {
+    width: 200px;
+    height: auto;
+}
+
+
+.destination-desc {
+
+	margin-left: 30px;
+	display: flex;
+	align-self: end;
+}
+
+
+/* Städte CSS */
+.city {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.city-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.city-header img {
+    max-width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.city-content {
+    margin-top: 20px;
+}
+
+.city-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.city-section {
+    margin-top: 30px;
+}
+
+.city-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.city-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* footer on every page */
+.footer {
+    justify-self: flex-end;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+	flex-direction:column;
+	margin-top:5%;
+}
+
+
+/* Rezept CSS */
+.recipe-content {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-preview {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-preview img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.recipe-preview a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--font-color);
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.recipe-preview a:hover {
+    background-color: var(--font-hover-color);
+}
+
+
+.recipe-preview {
+    margin: 20px auto;
+    max-width: 300px;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.recipe-preview:hover {
+    transform: scale(1.03); /* leicht vergrößert beim Darüberfahren mit der Maus */
+}
+
+.recipe-preview h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Rezept preview css */
+
+.recipe-preview img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.recipe-preview p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.recipe-preview a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--font-color);
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.recipe-preview a:hover {
+    background-color: var(--font-hover-color);
+}
+
+  
+
+/* Responsive Design: Mobile */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .header{
+        visibility: hidden;
+        z-index: -1;
+
+    }
+}
+
+/* Responsive Design: Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        margin: 5px 10px;
+    }
+
+    .content {
+        width: 80%;
+    }
+}
+
+/* Responsive Design: Desktop and above */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 22px;
+    }
+
+    .content {
+        width: 60%;
+    }
+}
+
+
+/* Default Styles for Headings */
+h1, h2, .destination h2, .city-section h2, .recipe-preview h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2, .destination h2, .city-section h2, .recipe-preview h2 {
+    font-size: 20px;
+}
+
+/* Responsive Design: Mobile */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    h2, .destination h2, .city-section h2, .recipe-preview h2 {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+

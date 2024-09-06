@@ -1,0 +1,16 @@
+doctype html 
+html 
+  include ../includes/head.pug
+  include ../includes/navbarBox.pug
+  body(style="height: 100vh;")
+      case urlPath 
+        when "/recipe"
+          include ../includes/recipe.pug
+        when "/home"
+          h1 Nothing in here 
+        when "/"
+          h1 Nothing in here
+        when "/about"
+          h1 Still under construction 
+        default 
+          h1 404 Error Site not visible
