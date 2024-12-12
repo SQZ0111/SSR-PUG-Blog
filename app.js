@@ -33,8 +33,8 @@ _.get("/test-check", async (ctx, next) => {
 });
 //starts with - match everyting enclosed with - every subroute of the group
 //provide here data für rendering in the pages
-//futher urlpath for main.pug switch case
-_.get(/^(\/(?:recipe|home|about)?)\/*/, async (ctx) => {
+//further urlpath for main.pug switch case
+_.get(/^(\/(?:recipe|home|about|create-recipe)?)\/*/, async (ctx) => {
   const contentArgs = {
     urlPath: ctx.path,
     recipe: {

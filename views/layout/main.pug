@@ -8,10 +8,12 @@ html
           when "/recipe"
             include ../includes/pages/recipe.pug
           when "/home"
-            h1 Nothing in here 
+            include ../includes/pages/home.pug 
           when "/"
             h1 Nothing in here
           when "/about"
             h1 Still under construction 
+          when "/create-recipe"
+            include ../includes/pages/addRecipe.pug
           default 
             h1 404 Error Site not visible

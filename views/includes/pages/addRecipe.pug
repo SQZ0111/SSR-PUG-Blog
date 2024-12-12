@@ -1,0 +1,12 @@
+main.create-recipe-main 
+    h1.hero-header Create Your Own Recipe
+    div.create-recipe-container
+      div#ingredients-container
+        div.ingredient
+            input(type="text", name="quantity[]", placeholder="Quantity (e.g., 200g)")
+            input(type="text", name="ingredient[]", placeholder="Ingredient (e.g., Spaghetti)")
+            button(type="button", class="remove-ingredient") Remove
+        button(type="button", id="add-ingredient") Add Ingredient
+        button(type="submit") Submit Recipe
+
+            
